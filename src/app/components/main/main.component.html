@@ -1,0 +1,25 @@
+<section>
+    <article>
+        <div class="seleccionar">
+            <span (click)="selectSpan('All')">
+                All
+            </span>
+            <div class="selection-line" *ngIf="selectedSpan === 'All'"></div>
+        </div>
+        <div class="seleccionar">
+            <span (click)="selectSpan('Active')">
+                Active
+            </span>
+            <div class="selection-line" *ngIf="selectedSpan === 'Active'"></div>
+        </div>
+        <div class="seleccionar">
+            <span (click)="selectSpan('Completed')">
+                Completed
+            </span>
+            <div class="selection-line" *ngIf="selectedSpan === 'Completed'"></div>
+        </div>
+    </article>
+</section>
+<app-tareas-todo *ngIf="selectedSpan === 'All'"></app-tareas-todo>
+<app-tareas-activas *ngIf="selectedSpan === 'Active'"></app-tareas-activas>
+<app-tareas-completadas *ngIf="selectedSpan === 'Completed'"></app-tareas-completadas>

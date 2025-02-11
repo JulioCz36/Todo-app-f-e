@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+button {
+  width: 124px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background: #eb5757;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 25px;
+}
+p {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+}
+button:active {
+  transform: scale(
+    0.95
+  );
+}

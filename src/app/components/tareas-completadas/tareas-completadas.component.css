@@ -1,0 +1,6 @@
+section{
+    display: flex;
+    width: 608px;
+    flex-direction: column;
+    align-items: flex-end;
+}

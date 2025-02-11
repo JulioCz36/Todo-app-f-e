@@ -1,0 +1,9 @@
+<article>
+    <form>
+        <div class="input-wrapper">
+            <input type="text" id="tarea" name="tarea" [(ngModel)]="nuevaTarea" placeholder="add details" (keyup.enter)="agregarTarea()">
+          <label for="tarea"></label>
+        </div>
+    </form>
+    <button (click)="agregarTarea()">Add</button>
+</article>  

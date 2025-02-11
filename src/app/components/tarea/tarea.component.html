@@ -1,0 +1,8 @@
+<section>
+    <div>
+        <input type="checkbox" name="opcion" [value]="tareasData.id" [(ngModel)]="tareasData.bool" (change)="emitUpdateTarea(tareasData)"> 
+        <p>{{tareasData.tarea}}</p>
+    </div>
+    <app-eliminar *ngIf="mostrarEliminar && tareasData.bool" (click)="deleteTarea(tareasData)"></app-eliminar>
+</section>
+

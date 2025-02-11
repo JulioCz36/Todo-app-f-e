@@ -1,0 +1,24 @@
+input {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+p {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+div {
+  display: flex;
+}
+input:checked + p {
+    text-decoration: line-through;
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  width: 608px;
+  margin-top: 20px;
+}

@@ -1,0 +1,3 @@
+<app-anadir-tareas (tareaAgregada)="addTarea($event)"></app-anadir-tareas>
+<app-tarea  *ngFor="let tareasDataParent of tareasList" [tareasData]="tareasDataParent" (updateTarea)="updateTarea($event)"></app-tarea>
+

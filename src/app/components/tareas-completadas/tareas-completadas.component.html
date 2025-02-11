@@ -1,0 +1,4 @@
+<section>
+    <app-tarea *ngFor="let tareasDataParent of tareasList" [tareasData]="tareasDataParent" [mostrarEliminar]="Eliminar" (tareaRemove)="removeTareaToList($event)" (updateTarea)="updateTarea($event)"></app-tarea>
+    <app-boton-eliminar-todo *ngIf="tareasList.length > 0 " (click)="eliminarTodasCompletadas()"></app-boton-eliminar-todo>
+</section>
